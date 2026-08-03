@@ -1,252 +1,63 @@
-/* =====================================================
-   SIRIUSONE INVESTMENTS
-   Version 1.0
-=====================================================*/
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-
-background:#050b16;
-
-color:#ffffff;
-
-font-family:Arial,Helvetica,sans-serif;
-
+    background:#071321;
+    color:white;
+    font-family:Roboto,Arial,sans-serif;
 }
 
-/* ---------- HEADER ---------- */
-
-header{
-
-height:95px;
-
-background:#081523;
-
-border-bottom:1px solid #1c2d48;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-padding-left:25px;
-
-padding-right:25px;
-
+#dashboard{
+    width:1850px;
+    margin:15px auto;
+    display:grid;
+    grid-template-columns:260px 540px 260px 260px 260px;
+    grid-auto-rows:minmax(120px,auto);
+    gap:10px;
 }
 
-/* ---------- LOGO ---------- */
+.panel{
+    background:#0d1b2f;
+    border:1px solid #2d4f7a;
+    border-radius:8px;
+    padding:12px;
+}
+
+.header{
+    grid-column:1 / span 5;
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#08111d;
+}
 
 .logo{
-
-font-size:36px;
-
-font-weight:bold;
-
-color:#3ea8ff;
-
-letter-spacing:2px;
-
-}
-
-.logo span{
-
-display:block;
-
-font-size:15px;
-
-font-weight:normal;
-
-color:white;
-
-margin-top:-4px;
-
-letter-spacing:4px;
-
-}
-
-/* ---------- TITEL ---------- */
-
-.title{
-
-flex:1;
-
-padding-left:40px;
-
+    color:#4ab2ff;
+    font-size:34px;
+    font-weight:900;
 }
 
 .company{
-
-font-size:42px;
-
-font-weight:bold;
-
+    font-size:42px;
+    font-weight:900;
 }
 
 .ticker{
-
-color:#2ca9ff;
-
+    color:#36a3ff;
 }
 
 .price{
-
-font-size:40px;
-
-font-weight:bold;
-
-color:white;
-
-margin-left:25px;
-
+    font-size:48px;
+    color:#00ff66;
+    font-weight:900;
 }
 
-.change{
-
-font-size:20px;
-
-color:#1ed760;
-
-margin-left:15px;
-
+.subtitle{
+    color:#9ec9ff;
+    font-size:18px;
 }
 
-/* ---------- EVENT ---------- */
-
-.event{
-
-width:360px;
-
-height:70px;
-
-border:1px solid #1f3555;
-
-border-radius:8px;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-padding-left:18px;
-
-}
-
-.eventTitle{
-
-font-size:14px;
-
-color:#5ebcff;
-
-margin-bottom:6px;
-
-}
-
-.eventDate{
-
-font-size:22px;
-
-font-weight:bold;
-
-}
-
-/* ---------- GRID ---------- */
-
-.dashboard{
-
-display:grid;
-
-grid-template-columns:
-
-280px
-
-700px
-
-450px;
-
-gap:15px;
-
-padding:15px;
-
-}
-
-/* ---------- BOX ---------- */
-
-.box{
-
-background:#091421;
-
-border:1px solid #243956;
-
-border-radius:10px;
-
-padding:15px;
-
-}
-
-.boxTitle{
-
-font-size:22px;
-
-color:#49b4ff;
-
-margin-bottom:15px;
-
-text-transform:uppercase;
-
-}
-
-/* ---------- RESPONSIVE ---------- */
-
-@media(max-width:1200px){
-
-.dashboard{
-
-grid-template-columns:1fr;
-
-}
-
-header{
-
-display:block;
-
-height:auto;
-
-padding:20px;
-
-}
-
-.title{
-
-padding-left:0;
-
-margin-top:15px;
-
-}
-
-.event{
-
-margin-top:15px;
-
-width:100%;
-
-}
-
-.price{
-
-display:block;
-
-margin-left:0;
-
-margin-top:8px;
-
-}
-
-}
